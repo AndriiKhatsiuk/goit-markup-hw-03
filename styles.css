@@ -2,6 +2,22 @@ body {
     font-family: "Roboto", sans-serif;
     color: var(--main-dark-color);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
 .list {
     list-style: none;
 }
@@ -11,8 +27,8 @@ body {
 
 .container{
     width: 1158px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid red;
@@ -33,6 +49,8 @@ body {
 /*index.html*/
 
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 background-color: var(--main-white-color);
 }
 
@@ -104,6 +122,8 @@ background-color: var(--main-white-color);
     background-color: var(--main-dark-color);
 }
 .main-header {
+    padding-top: 188px;
+    padding-bottom: 188px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -135,6 +155,7 @@ background-color: var(--main-white-color);
 }
 
 .attitudes-gap{
+    padding-top: 120px;
     display: flex;
     gap: 24px;
 }
@@ -157,7 +178,13 @@ background-color: var(--main-white-color);
 
   /* products */
 
+.products {
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
 .products-header {
+    padding-bottom: 72px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -217,6 +244,8 @@ background-color: var(--main-white-color);
   /* footer */
 .footer {
     background: var(--main-dark-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .footer-logo {
     text-transform: uppercase;
