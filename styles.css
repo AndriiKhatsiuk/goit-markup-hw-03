@@ -122,6 +122,7 @@ background-color: var(--main-white-color);
     background-color: var(--main-dark-color);
 }
 .main-header {
+    width: 494px;
     padding-top: 188px;
     padding-bottom: 188px;
     font-size: 56px;
