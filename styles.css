@@ -18,6 +18,10 @@ ul {
     padding-left: 0;
 }
 
+.img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
@@ -33,6 +37,8 @@ ul {
     margin-right: auto;
     outline: 2px solid red;
 }
+
+
 
 :root {
     --main-dark-color: #2e2f42;
@@ -84,15 +90,11 @@ background-color: var(--main-white-color);
 }
 
 .header-navigation{
+    margin-right: auto;
     display: flex;
-    align-items: center;
+    padding-top: 24px;
 }
 
-
-.contacts-address{
-    display: flex;
-    margin-left: auto;
-}
 
 .contacts-list{
     display: flex;
@@ -105,9 +107,7 @@ background-color: var(--main-white-color);
 .header-link:focus {
     color: var(--focus-and-hover-color);
 }
-.contacts-address {
-    font-style: normal;
-}
+
 .contact-link {
     color: var(--dark-color);
 }
@@ -120,17 +120,22 @@ background-color: var(--main-white-color);
 
 .main {
     background-color: var(--main-dark-color);
-}
-.main-header {
-    width: 494px;
     padding-top: 188px;
     padding-bottom: 188px;
+}
+.main-header {
+    text-align: center;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--main-white-color);
 }
 .main-btn {
+    text-align: center;
+    margin-top: 64px;
     font-family: inherit;
     background: var(--logo-and-btn-color);
     color: var(--main-white-color);
@@ -185,7 +190,7 @@ background-color: var(--main-white-color);
 }
 
 .products-header {
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -202,6 +207,8 @@ background-color: var(--main-white-color);
 
 .team {
     background: var(--light-color);
+    margin-bottom: 120px;
+    
 }
 .team-header {
     padding-top: 120px;
@@ -217,7 +224,6 @@ background-color: var(--main-white-color);
 .team-list{
     display: flex;
     gap: 24px;
-    margin-bottom: 120px;
 }
 
 
@@ -280,6 +286,11 @@ background-color: var(--main-white-color);
 /* portfolio */
 
 .portfolio-products-list{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.portfolio-buttons-list{
     display: flex;
     gap: 24px;
 }
