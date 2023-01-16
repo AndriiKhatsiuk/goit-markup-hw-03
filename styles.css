@@ -160,10 +160,12 @@ background-color: var(--main-white-color);
     overflow: hidden;
 }
 
-.attitudes-gap{
+.attitudes-list{
     padding-top: 120px;
     display: flex;
     gap: 24px;
+    margin-right: 120px;
+    margin-left: 120px;
 }
 
 .attitudes-item-title {
@@ -250,6 +252,7 @@ background-color: var(--main-white-color);
 
   /* footer */
 .footer {
+    margin-top: 120px;
     background: var(--main-dark-color);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -286,11 +289,13 @@ background-color: var(--main-white-color);
 /* portfolio */
 
 .portfolio-products-list{
+    margin-top: 72px;
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
 }
 .portfolio-buttons-list{
+    padding-top: 96px;
     display: flex;
     gap: 24px;
 }
