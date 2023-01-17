@@ -18,7 +18,7 @@ ul {
     padding-left: 0;
 }
 
-.img {
+img {
     display: block;
 }
 
@@ -92,7 +92,11 @@ background-color: var(--main-white-color);
 .header-navigation{
     margin-right: auto;
     display: flex;
-    padding-top: 24px;
+}
+
+.header-container{
+    display: flex;
+    font-style: normal;
 }
 
 
@@ -134,15 +138,22 @@ background-color: var(--main-white-color);
     color: var(--main-white-color);
 }
 .main-btn {
-    text-align: center;
-    margin-top: 64px;
     font-family: inherit;
     background: var(--logo-and-btn-color);
     color: var(--main-white-color);
     font-weight: 500;
     font-size: 16px;
     line-height: var(--main-line-height);
+    border-radius: 4px;
+    margin-top: 48px;
     cursor: pointer;
+    display: block;
+    padding: 16px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 169px;
+    min-height: 56px;
+    gap: 10px;
 }
 .main-btn:focus,
 .main-btn:hover {
@@ -160,21 +171,24 @@ background-color: var(--main-white-color);
     overflow: hidden;
 }
 
-.attitudes-list{
-    padding-top: 120px;
-    display: flex;
-    gap: 24px;
-    margin-right: 120px;
-    margin-left: 120px;
+.attitudes-container {
+    padding: 120px 156px;
 }
 
+.attitudes-list {
+    display: flex;
+}
+.attitudes-item {
+    margin-right: 24px;
+    width: calc(100% / 4);
+}
 .attitudes-item-title {
-    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-dark-color);
+    margin-bottom: 8px;
 }
 
 .attitudes-item-text {
@@ -188,7 +202,6 @@ background-color: var(--main-white-color);
 
 .products {
     padding-bottom: 120px;
-    padding-top: 120px;
 }
 
 .products-header {
@@ -207,14 +220,14 @@ background-color: var(--main-white-color);
 }
   /* team */
 
+
+
 .team {
     background: var(--light-color);
-    margin-bottom: 120px;
-    
 }
 .team-header {
     padding-top: 120px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -233,9 +246,6 @@ background-color: var(--main-white-color);
     background-color: var(--main-white-color);
 }
 .team-item-header {
-    text-align: center;
-    margin-top: 32px;
-    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -243,25 +253,35 @@ background-color: var(--main-white-color);
     color: var(--main-dark-color);
 }
 .team-item-text {
-    text-align: center;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-dark-color);
 }
 
+.team-space {
+    bottom: 0;
+    padding: 32px 16px;
+    text-align: center;
+    transition: bottom 0.5s ease;
+    align-items: center;
+}
+
   /* footer */
+
 .footer {
     margin-top: 120px;
     background: var(--main-dark-color);
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .footer-logo {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--light-color);
 }
+
 .footer-logo-web {
     font-family: var(--font-family-raleway);
     font-style: normal;
@@ -272,21 +292,31 @@ background-color: var(--main-white-color);
     text-transform: uppercase;
     color: var(--logo-and-btn-color);
 }
+
 .footer-title {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-light-color);
 }
+
 .footer-text {
+    margin-top: 16px;
     font-style: normal;
-    font-weight: 400;
+    width: 264px;
+    height: 72px;
     font-size: 16px;
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--dark-light-color);
 }
+
 /* portfolio */
+.main-h {
+    text-align: center;
+    visibility: hidden;
+    flex-direction: row;
+}
 
 .portfolio-products-list{
     margin-top: 72px;
