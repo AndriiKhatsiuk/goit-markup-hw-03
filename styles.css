@@ -313,9 +313,14 @@ background-color: var(--main-white-color);
 
 /* portfolio */
 .main-h {
-    text-align: center;
+    margin: 0 auto;
+    display: block;
     visibility: hidden;
     flex-direction: row;
+}
+.main-menu{
+    padding: 12px 24px;
+    text-align: center;
 }
 
 .portfolio-products-list{
