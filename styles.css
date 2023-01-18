@@ -331,12 +331,14 @@ background-color: var(--main-white-color);
 }
 
 .portfolio-products-list{
+    column-gap: 24px;
+    row-gap: 48px;
     margin-top: 72px;
     display: flex;
-    gap: 24px;
     flex-wrap: wrap;
 }
 .portfolio-buttons-list{
+    justify-content: center;
     padding-top: 96px;
     display: flex;
     gap: 24px;
@@ -367,6 +369,7 @@ background-color: var(--main-white-color);
     background-color: var(--main-white-color);
 }
 .portfolio-product-item-header {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -378,4 +381,10 @@ background-color: var(--main-white-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.portfolio-space {
+    bottom: 0;
+    padding: 32px;
+    transition: bottom 0.5s ease;
 }
