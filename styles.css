@@ -181,6 +181,7 @@ background-color: var(--main-white-color);
 }
 
 .attitudes-list {
+    gap: 24px;
     display: flex;
 }
 .attitudes-item {
@@ -227,11 +228,12 @@ background-color: var(--main-white-color);
 
 
 .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
     background: var(--light-color);
 }
 .team-header {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-bottom: 72px;
     text-align: center;
     font-size: 36px;
     line-height: 1.11;
@@ -257,6 +259,7 @@ background-color: var(--main-white-color);
     color: var(--main-dark-color);
 }
 .team-item-text {
+    margin-top: 8px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -274,7 +277,7 @@ background-color: var(--main-white-color);
   /* footer */
 
 .footer {
-    margin-top: 120px;
+
     background: var(--main-dark-color);
     padding-top: 100px;
     padding-bottom: 100px;
